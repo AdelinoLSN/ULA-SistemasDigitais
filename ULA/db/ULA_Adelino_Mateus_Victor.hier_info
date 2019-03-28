@@ -1,0 +1,1979 @@
+|ULA_Adelino_Mateus_Victor
+SINAL <= S[0].DB_MAX_OUTPUT_PORT_TYPE
+A[4] => Menu_Parte1:inst2.A[4]
+A[3] => Menu_Parte1:inst2.A[3]
+A[2] => Menu_Parte1:inst2.A[2]
+A[1] => Menu_Parte1:inst2.A[1]
+A[0] => Menu_Parte1:inst2.A[0]
+B[4] => Menu_Parte1:inst2.B[4]
+B[3] => Menu_Parte1:inst2.B[3]
+B[2] => Menu_Parte1:inst2.B[2]
+B[1] => Menu_Parte1:inst2.B[1]
+B[0] => Menu_Parte1:inst2.B[0]
+SEL[2] => Menu_Parte1:inst2.SEL[2]
+SEL[1] => Menu_Parte1:inst2.SEL[1]
+SEL[0] => Menu_Parte1:inst2.SEL[0]
+L1 <= Decodificador:inst.S1
+L2 <= Decodificador:inst.S2
+L3 <= Decodificador:inst.S3
+L4 <= Decodificador:inst.S4
+L5 <= Decodificador:inst.S5
+L6 <= Decodificador:inst.S6
+L7 <= Decodificador:inst.S7
+L8 <= Decodificador:inst.S8
+L9 <= Decodificador:inst.S9
+L10 <= Decodificador:inst.S10
+L11 <= Decodificador:inst.S11
+L12 <= Decodificador:inst.S12
+L13 <= Decodificador:inst.S13
+L14 <= Decodificador:inst.S14
+EstadoF <= Menu_Parte1:inst2.Estado
+OverflowF <= Menu_Parte1:inst2.Overflow
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2
+Estado <= Multiplexador_Final_Final:inst1.EstadoR
+A[4] => Somador_5bit:inst.A[4]
+A[4] => Subtrator_5bits:inst2.A[4]
+A[4] => A-1:inst4.A[4]
+A[4] => Ax4:inst5.A[4]
+A[4] => Comparador_5bit:inst6.A[4]
+A[4] => Comparador_5bit_Menor_Igual:inst7.A[4]
+A[4] => Multiplexador_Final_Final:inst1.V4[4]
+A[4] => Multiplexador_Final_Final:inst1.V5[4]
+A[4] => Maximo:inst8.A[4]
+A[4] => Minimo:inst9.A[4]
+A[3] => Somador_5bit:inst.A[3]
+A[3] => Subtrator_5bits:inst2.A[3]
+A[3] => A-1:inst4.A[3]
+A[3] => Ax4:inst5.A[3]
+A[3] => Comparador_5bit:inst6.A[3]
+A[3] => Comparador_5bit_Menor_Igual:inst7.A[3]
+A[3] => Multiplexador_Final_Final:inst1.V4[3]
+A[3] => Multiplexador_Final_Final:inst1.V5[3]
+A[3] => Maximo:inst8.A[3]
+A[3] => Minimo:inst9.A[3]
+A[2] => Somador_5bit:inst.A[2]
+A[2] => Subtrator_5bits:inst2.A[2]
+A[2] => A-1:inst4.A[2]
+A[2] => Ax4:inst5.A[2]
+A[2] => Comparador_5bit:inst6.A[2]
+A[2] => Comparador_5bit_Menor_Igual:inst7.A[2]
+A[2] => Multiplexador_Final_Final:inst1.V4[2]
+A[2] => Multiplexador_Final_Final:inst1.V5[2]
+A[2] => Maximo:inst8.A[2]
+A[2] => Minimo:inst9.A[2]
+A[1] => Somador_5bit:inst.A[1]
+A[1] => Subtrator_5bits:inst2.A[1]
+A[1] => A-1:inst4.A[1]
+A[1] => Ax4:inst5.A[1]
+A[1] => Comparador_5bit:inst6.A[1]
+A[1] => Comparador_5bit_Menor_Igual:inst7.A[1]
+A[1] => Multiplexador_Final_Final:inst1.V4[1]
+A[1] => Multiplexador_Final_Final:inst1.V5[1]
+A[1] => Maximo:inst8.A[1]
+A[1] => Minimo:inst9.A[1]
+A[0] => Somador_5bit:inst.A[0]
+A[0] => Subtrator_5bits:inst2.A[0]
+A[0] => A-1:inst4.A[0]
+A[0] => Ax4:inst5.A[0]
+A[0] => Comparador_5bit:inst6.A[0]
+A[0] => Comparador_5bit_Menor_Igual:inst7.A[0]
+A[0] => Multiplexador_Final_Final:inst1.V4[0]
+A[0] => Multiplexador_Final_Final:inst1.V5[0]
+A[0] => Maximo:inst8.A[0]
+A[0] => Minimo:inst9.A[0]
+B[4] => Somador_5bit:inst.B[4]
+B[4] => Subtrator_5bits:inst2.B[4]
+B[4] => Comparador_5bit:inst6.B[4]
+B[4] => Comparador_5bit_Menor_Igual:inst7.B[4]
+B[4] => Maximo:inst8.B[4]
+B[4] => Minimo:inst9.B[4]
+B[3] => Somador_5bit:inst.B[3]
+B[3] => Subtrator_5bits:inst2.B[3]
+B[3] => Comparador_5bit:inst6.B[3]
+B[3] => Comparador_5bit_Menor_Igual:inst7.B[3]
+B[3] => Maximo:inst8.B[3]
+B[3] => Minimo:inst9.B[3]
+B[2] => Somador_5bit:inst.B[2]
+B[2] => Subtrator_5bits:inst2.B[2]
+B[2] => Comparador_5bit:inst6.B[2]
+B[2] => Comparador_5bit_Menor_Igual:inst7.B[2]
+B[2] => Maximo:inst8.B[2]
+B[2] => Minimo:inst9.B[2]
+B[1] => Somador_5bit:inst.B[1]
+B[1] => Subtrator_5bits:inst2.B[1]
+B[1] => Comparador_5bit:inst6.B[1]
+B[1] => Comparador_5bit_Menor_Igual:inst7.B[1]
+B[1] => Maximo:inst8.B[1]
+B[1] => Minimo:inst9.B[1]
+B[0] => Somador_5bit:inst.B[0]
+B[0] => Subtrator_5bits:inst2.B[0]
+B[0] => Comparador_5bit:inst6.B[0]
+B[0] => Comparador_5bit_Menor_Igual:inst7.B[0]
+B[0] => Maximo:inst8.B[0]
+B[0] => Minimo:inst9.B[0]
+SEL[2] => Multiplexador_Final_Final:inst1.S0
+SEL[1] => Multiplexador_Final_Final:inst1.S1
+SEL[0] => Multiplexador_Final_Final:inst1.S2
+Overflow <= Multiplexador_Final_Final:inst1.OverflowR
+S[4] <= Multiplexador_Final_Final:inst1.R[4]
+S[3] <= Multiplexador_Final_Final:inst1.R[3]
+S[2] <= Multiplexador_Final_Final:inst1.R[2]
+S[1] <= Multiplexador_Final_Final:inst1.R[1]
+S[0] <= Multiplexador_Final_Final:inst1.R[0]
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1
+EstadoR <= Multiplexador_Final:inst12.Estado
+OV0 => Multiplexador_Final:inst.OverflowA
+OV1 => Multiplexador_Final:inst.OverflowB
+EST0 => Multiplexador_Final:inst.EstadoA
+EST1 => Multiplexador_Final:inst.EstadoB
+S0 => Multiplexador_Final:inst.SEL
+S0 => Multiplexador_Final:inst7.SEL
+S0 => Multiplexador_Final:inst8.SEL
+S0 => Multiplexador_Final:inst9.SEL
+V0[4] => Multiplexador_Final:inst.A[4]
+V0[3] => Multiplexador_Final:inst.A[3]
+V0[2] => Multiplexador_Final:inst.A[2]
+V0[1] => Multiplexador_Final:inst.A[1]
+V0[0] => Multiplexador_Final:inst.A[0]
+V1[4] => Multiplexador_Final:inst.B[4]
+V1[3] => Multiplexador_Final:inst.B[3]
+V1[2] => Multiplexador_Final:inst.B[2]
+V1[1] => Multiplexador_Final:inst.B[1]
+V1[0] => Multiplexador_Final:inst.B[0]
+OV2 => Multiplexador_Final:inst7.OverflowA
+OV3 => Multiplexador_Final:inst7.OverflowB
+EST2 => Multiplexador_Final:inst7.EstadoA
+EST3 => Multiplexador_Final:inst7.EstadoB
+V2[4] => Multiplexador_Final:inst7.A[4]
+V2[3] => Multiplexador_Final:inst7.A[3]
+V2[2] => Multiplexador_Final:inst7.A[2]
+V2[1] => Multiplexador_Final:inst7.A[1]
+V2[0] => Multiplexador_Final:inst7.A[0]
+V3[4] => Multiplexador_Final:inst7.B[4]
+V3[3] => Multiplexador_Final:inst7.B[3]
+V3[2] => Multiplexador_Final:inst7.B[2]
+V3[1] => Multiplexador_Final:inst7.B[1]
+V3[0] => Multiplexador_Final:inst7.B[0]
+S1 => Multiplexador_Final:inst10.SEL
+S1 => Multiplexador_Final:inst11.SEL
+OV4 => Multiplexador_Final:inst8.OverflowA
+OV5 => Multiplexador_Final:inst8.OverflowB
+EST4 => Multiplexador_Final:inst8.EstadoA
+EST5 => Multiplexador_Final:inst8.EstadoB
+V4[4] => Multiplexador_Final:inst8.A[4]
+V4[3] => Multiplexador_Final:inst8.A[3]
+V4[2] => Multiplexador_Final:inst8.A[2]
+V4[1] => Multiplexador_Final:inst8.A[1]
+V4[0] => Multiplexador_Final:inst8.A[0]
+V5[4] => Multiplexador_Final:inst8.B[4]
+V5[3] => Multiplexador_Final:inst8.B[3]
+V5[2] => Multiplexador_Final:inst8.B[2]
+V5[1] => Multiplexador_Final:inst8.B[1]
+V5[0] => Multiplexador_Final:inst8.B[0]
+OV6 => Multiplexador_Final:inst9.OverflowA
+OV7 => Multiplexador_Final:inst9.OverflowB
+EST6 => Multiplexador_Final:inst9.EstadoA
+EST7 => Multiplexador_Final:inst9.EstadoB
+V6[4] => Multiplexador_Final:inst9.A[4]
+V6[3] => Multiplexador_Final:inst9.A[3]
+V6[2] => Multiplexador_Final:inst9.A[2]
+V6[1] => Multiplexador_Final:inst9.A[1]
+V6[0] => Multiplexador_Final:inst9.A[0]
+V7[4] => Multiplexador_Final:inst9.B[4]
+V7[3] => Multiplexador_Final:inst9.B[3]
+V7[2] => Multiplexador_Final:inst9.B[2]
+V7[1] => Multiplexador_Final:inst9.B[1]
+V7[0] => Multiplexador_Final:inst9.B[0]
+S2 => Multiplexador_Final:inst12.SEL
+OverflowR <= Multiplexador_Final:inst12.Overflow
+R[4] <= Multiplexador_Final:inst12.S[4]
+R[3] <= Multiplexador_Final:inst12.S[3]
+R[2] <= Multiplexador_Final:inst12.S[2]
+R[1] <= Multiplexador_Final:inst12.S[1]
+R[0] <= Multiplexador_Final:inst12.S[0]
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst12
+Estado <= Multiplexador_2_1:inst6.Z
+EstadoA => Multiplexador_2_1:inst6.I0
+EstadoB => Multiplexador_2_1:inst6.I1
+SEL => Multiplexador_2_1:inst6.S
+SEL => Multiplexador_2_1:inst5.S
+SEL => Multiplexador_2_1:inst4.S
+SEL => Multiplexador_2_1:inst.S
+SEL => Multiplexador_2_1:inst1.S
+SEL => Multiplexador_2_1:inst2.S
+SEL => Multiplexador_2_1:inst3.S
+Overflow <= Multiplexador_2_1:inst5.Z
+OverflowA => Multiplexador_2_1:inst5.I0
+OverflowB => Multiplexador_2_1:inst5.I1
+S[4] <= Multiplexador_2_1:inst4.Z
+S[3] <= Multiplexador_2_1:inst.Z
+S[2] <= Multiplexador_2_1:inst1.Z
+S[1] <= Multiplexador_2_1:inst2.Z
+S[0] <= Multiplexador_2_1:inst3.Z
+A[4] => Multiplexador_2_1:inst4.I0
+A[3] => Multiplexador_2_1:inst.I0
+A[2] => Multiplexador_2_1:inst1.I0
+A[1] => Multiplexador_2_1:inst2.I0
+A[0] => Multiplexador_2_1:inst3.I0
+B[4] => Multiplexador_2_1:inst4.I1
+B[3] => Multiplexador_2_1:inst.I1
+B[2] => Multiplexador_2_1:inst1.I1
+B[1] => Multiplexador_2_1:inst2.I1
+B[0] => Multiplexador_2_1:inst3.I1
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst12|Multiplexador_2_1:inst6
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst12|Multiplexador_2_1:inst5
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst12|Multiplexador_2_1:inst4
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst12|Multiplexador_2_1:inst
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst12|Multiplexador_2_1:inst1
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst12|Multiplexador_2_1:inst2
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst12|Multiplexador_2_1:inst3
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst10
+Estado <= Multiplexador_2_1:inst6.Z
+EstadoA => Multiplexador_2_1:inst6.I0
+EstadoB => Multiplexador_2_1:inst6.I1
+SEL => Multiplexador_2_1:inst6.S
+SEL => Multiplexador_2_1:inst5.S
+SEL => Multiplexador_2_1:inst4.S
+SEL => Multiplexador_2_1:inst.S
+SEL => Multiplexador_2_1:inst1.S
+SEL => Multiplexador_2_1:inst2.S
+SEL => Multiplexador_2_1:inst3.S
+Overflow <= Multiplexador_2_1:inst5.Z
+OverflowA => Multiplexador_2_1:inst5.I0
+OverflowB => Multiplexador_2_1:inst5.I1
+S[4] <= Multiplexador_2_1:inst4.Z
+S[3] <= Multiplexador_2_1:inst.Z
+S[2] <= Multiplexador_2_1:inst1.Z
+S[1] <= Multiplexador_2_1:inst2.Z
+S[0] <= Multiplexador_2_1:inst3.Z
+A[4] => Multiplexador_2_1:inst4.I0
+A[3] => Multiplexador_2_1:inst.I0
+A[2] => Multiplexador_2_1:inst1.I0
+A[1] => Multiplexador_2_1:inst2.I0
+A[0] => Multiplexador_2_1:inst3.I0
+B[4] => Multiplexador_2_1:inst4.I1
+B[3] => Multiplexador_2_1:inst.I1
+B[2] => Multiplexador_2_1:inst1.I1
+B[1] => Multiplexador_2_1:inst2.I1
+B[0] => Multiplexador_2_1:inst3.I1
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst10|Multiplexador_2_1:inst6
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst10|Multiplexador_2_1:inst5
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst10|Multiplexador_2_1:inst4
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst10|Multiplexador_2_1:inst
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst10|Multiplexador_2_1:inst1
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst10|Multiplexador_2_1:inst2
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst10|Multiplexador_2_1:inst3
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst
+Estado <= Multiplexador_2_1:inst6.Z
+EstadoA => Multiplexador_2_1:inst6.I0
+EstadoB => Multiplexador_2_1:inst6.I1
+SEL => Multiplexador_2_1:inst6.S
+SEL => Multiplexador_2_1:inst5.S
+SEL => Multiplexador_2_1:inst4.S
+SEL => Multiplexador_2_1:inst.S
+SEL => Multiplexador_2_1:inst1.S
+SEL => Multiplexador_2_1:inst2.S
+SEL => Multiplexador_2_1:inst3.S
+Overflow <= Multiplexador_2_1:inst5.Z
+OverflowA => Multiplexador_2_1:inst5.I0
+OverflowB => Multiplexador_2_1:inst5.I1
+S[4] <= Multiplexador_2_1:inst4.Z
+S[3] <= Multiplexador_2_1:inst.Z
+S[2] <= Multiplexador_2_1:inst1.Z
+S[1] <= Multiplexador_2_1:inst2.Z
+S[0] <= Multiplexador_2_1:inst3.Z
+A[4] => Multiplexador_2_1:inst4.I0
+A[3] => Multiplexador_2_1:inst.I0
+A[2] => Multiplexador_2_1:inst1.I0
+A[1] => Multiplexador_2_1:inst2.I0
+A[0] => Multiplexador_2_1:inst3.I0
+B[4] => Multiplexador_2_1:inst4.I1
+B[3] => Multiplexador_2_1:inst.I1
+B[2] => Multiplexador_2_1:inst1.I1
+B[1] => Multiplexador_2_1:inst2.I1
+B[0] => Multiplexador_2_1:inst3.I1
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst|Multiplexador_2_1:inst6
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst|Multiplexador_2_1:inst5
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst|Multiplexador_2_1:inst4
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst|Multiplexador_2_1:inst
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst|Multiplexador_2_1:inst1
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst|Multiplexador_2_1:inst2
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst|Multiplexador_2_1:inst3
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst7
+Estado <= Multiplexador_2_1:inst6.Z
+EstadoA => Multiplexador_2_1:inst6.I0
+EstadoB => Multiplexador_2_1:inst6.I1
+SEL => Multiplexador_2_1:inst6.S
+SEL => Multiplexador_2_1:inst5.S
+SEL => Multiplexador_2_1:inst4.S
+SEL => Multiplexador_2_1:inst.S
+SEL => Multiplexador_2_1:inst1.S
+SEL => Multiplexador_2_1:inst2.S
+SEL => Multiplexador_2_1:inst3.S
+Overflow <= Multiplexador_2_1:inst5.Z
+OverflowA => Multiplexador_2_1:inst5.I0
+OverflowB => Multiplexador_2_1:inst5.I1
+S[4] <= Multiplexador_2_1:inst4.Z
+S[3] <= Multiplexador_2_1:inst.Z
+S[2] <= Multiplexador_2_1:inst1.Z
+S[1] <= Multiplexador_2_1:inst2.Z
+S[0] <= Multiplexador_2_1:inst3.Z
+A[4] => Multiplexador_2_1:inst4.I0
+A[3] => Multiplexador_2_1:inst.I0
+A[2] => Multiplexador_2_1:inst1.I0
+A[1] => Multiplexador_2_1:inst2.I0
+A[0] => Multiplexador_2_1:inst3.I0
+B[4] => Multiplexador_2_1:inst4.I1
+B[3] => Multiplexador_2_1:inst.I1
+B[2] => Multiplexador_2_1:inst1.I1
+B[1] => Multiplexador_2_1:inst2.I1
+B[0] => Multiplexador_2_1:inst3.I1
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst7|Multiplexador_2_1:inst6
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst7|Multiplexador_2_1:inst5
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst7|Multiplexador_2_1:inst4
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst7|Multiplexador_2_1:inst
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst7|Multiplexador_2_1:inst1
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst7|Multiplexador_2_1:inst2
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst7|Multiplexador_2_1:inst3
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst11
+Estado <= Multiplexador_2_1:inst6.Z
+EstadoA => Multiplexador_2_1:inst6.I0
+EstadoB => Multiplexador_2_1:inst6.I1
+SEL => Multiplexador_2_1:inst6.S
+SEL => Multiplexador_2_1:inst5.S
+SEL => Multiplexador_2_1:inst4.S
+SEL => Multiplexador_2_1:inst.S
+SEL => Multiplexador_2_1:inst1.S
+SEL => Multiplexador_2_1:inst2.S
+SEL => Multiplexador_2_1:inst3.S
+Overflow <= Multiplexador_2_1:inst5.Z
+OverflowA => Multiplexador_2_1:inst5.I0
+OverflowB => Multiplexador_2_1:inst5.I1
+S[4] <= Multiplexador_2_1:inst4.Z
+S[3] <= Multiplexador_2_1:inst.Z
+S[2] <= Multiplexador_2_1:inst1.Z
+S[1] <= Multiplexador_2_1:inst2.Z
+S[0] <= Multiplexador_2_1:inst3.Z
+A[4] => Multiplexador_2_1:inst4.I0
+A[3] => Multiplexador_2_1:inst.I0
+A[2] => Multiplexador_2_1:inst1.I0
+A[1] => Multiplexador_2_1:inst2.I0
+A[0] => Multiplexador_2_1:inst3.I0
+B[4] => Multiplexador_2_1:inst4.I1
+B[3] => Multiplexador_2_1:inst.I1
+B[2] => Multiplexador_2_1:inst1.I1
+B[1] => Multiplexador_2_1:inst2.I1
+B[0] => Multiplexador_2_1:inst3.I1
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst11|Multiplexador_2_1:inst6
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst11|Multiplexador_2_1:inst5
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst11|Multiplexador_2_1:inst4
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst11|Multiplexador_2_1:inst
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst11|Multiplexador_2_1:inst1
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst11|Multiplexador_2_1:inst2
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst11|Multiplexador_2_1:inst3
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst8
+Estado <= Multiplexador_2_1:inst6.Z
+EstadoA => Multiplexador_2_1:inst6.I0
+EstadoB => Multiplexador_2_1:inst6.I1
+SEL => Multiplexador_2_1:inst6.S
+SEL => Multiplexador_2_1:inst5.S
+SEL => Multiplexador_2_1:inst4.S
+SEL => Multiplexador_2_1:inst.S
+SEL => Multiplexador_2_1:inst1.S
+SEL => Multiplexador_2_1:inst2.S
+SEL => Multiplexador_2_1:inst3.S
+Overflow <= Multiplexador_2_1:inst5.Z
+OverflowA => Multiplexador_2_1:inst5.I0
+OverflowB => Multiplexador_2_1:inst5.I1
+S[4] <= Multiplexador_2_1:inst4.Z
+S[3] <= Multiplexador_2_1:inst.Z
+S[2] <= Multiplexador_2_1:inst1.Z
+S[1] <= Multiplexador_2_1:inst2.Z
+S[0] <= Multiplexador_2_1:inst3.Z
+A[4] => Multiplexador_2_1:inst4.I0
+A[3] => Multiplexador_2_1:inst.I0
+A[2] => Multiplexador_2_1:inst1.I0
+A[1] => Multiplexador_2_1:inst2.I0
+A[0] => Multiplexador_2_1:inst3.I0
+B[4] => Multiplexador_2_1:inst4.I1
+B[3] => Multiplexador_2_1:inst.I1
+B[2] => Multiplexador_2_1:inst1.I1
+B[1] => Multiplexador_2_1:inst2.I1
+B[0] => Multiplexador_2_1:inst3.I1
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst8|Multiplexador_2_1:inst6
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst8|Multiplexador_2_1:inst5
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst8|Multiplexador_2_1:inst4
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst8|Multiplexador_2_1:inst
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst8|Multiplexador_2_1:inst1
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst8|Multiplexador_2_1:inst2
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst8|Multiplexador_2_1:inst3
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst9
+Estado <= Multiplexador_2_1:inst6.Z
+EstadoA => Multiplexador_2_1:inst6.I0
+EstadoB => Multiplexador_2_1:inst6.I1
+SEL => Multiplexador_2_1:inst6.S
+SEL => Multiplexador_2_1:inst5.S
+SEL => Multiplexador_2_1:inst4.S
+SEL => Multiplexador_2_1:inst.S
+SEL => Multiplexador_2_1:inst1.S
+SEL => Multiplexador_2_1:inst2.S
+SEL => Multiplexador_2_1:inst3.S
+Overflow <= Multiplexador_2_1:inst5.Z
+OverflowA => Multiplexador_2_1:inst5.I0
+OverflowB => Multiplexador_2_1:inst5.I1
+S[4] <= Multiplexador_2_1:inst4.Z
+S[3] <= Multiplexador_2_1:inst.Z
+S[2] <= Multiplexador_2_1:inst1.Z
+S[1] <= Multiplexador_2_1:inst2.Z
+S[0] <= Multiplexador_2_1:inst3.Z
+A[4] => Multiplexador_2_1:inst4.I0
+A[3] => Multiplexador_2_1:inst.I0
+A[2] => Multiplexador_2_1:inst1.I0
+A[1] => Multiplexador_2_1:inst2.I0
+A[0] => Multiplexador_2_1:inst3.I0
+B[4] => Multiplexador_2_1:inst4.I1
+B[3] => Multiplexador_2_1:inst.I1
+B[2] => Multiplexador_2_1:inst1.I1
+B[1] => Multiplexador_2_1:inst2.I1
+B[0] => Multiplexador_2_1:inst3.I1
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst9|Multiplexador_2_1:inst6
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst9|Multiplexador_2_1:inst5
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst9|Multiplexador_2_1:inst4
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst9|Multiplexador_2_1:inst
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst9|Multiplexador_2_1:inst1
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst9|Multiplexador_2_1:inst2
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Multiplexador_Final_Final:inst1|Multiplexador_Final:inst9|Multiplexador_2_1:inst3
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Somador_5bit:inst
+Overflow <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[4] => Somador_1bit:inst.A
+A[3] => Somador_1bit:inst1.A
+A[2] => Somador_1bit:inst2.A
+A[1] => Somador_1bit:inst3.A
+A[0] => Somador_1bit:inst9.A
+B[4] => Somador_1bit:inst.B
+B[3] => Somador_1bit:inst1.B
+B[2] => Somador_1bit:inst2.B
+B[1] => Somador_1bit:inst3.B
+B[0] => Somador_1bit:inst9.B
+S[4] <= Somador_1bit:inst.S
+S[3] <= Somador_1bit:inst1.S
+S[2] <= Somador_1bit:inst2.S
+S[1] <= Somador_1bit:inst3.S
+S[0] <= Somador_1bit:inst9.S
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Somador_5bit:inst|Somador_1bit:inst9
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Somador_5bit:inst|Somador_1bit:inst3
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Somador_5bit:inst|Somador_1bit:inst2
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Somador_5bit:inst|Somador_1bit:inst1
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Somador_5bit:inst|Somador_1bit:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Subtrator_5bits:inst2
+Overflow <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[4] => Somador_1bit:inst.A
+A[3] => Somador_1bit:inst1.A
+A[2] => Somador_1bit:inst2.A
+A[1] => Somador_1bit:inst3.A
+A[0] => Somador_1bit:inst9.A
+B[4] => inst12.IN0
+B[3] => inst13.IN0
+B[2] => inst15.IN0
+B[1] => inst14.IN0
+B[0] => inst16.IN0
+S[4] <= Somador_1bit:inst.S
+S[3] <= Somador_1bit:inst1.S
+S[2] <= Somador_1bit:inst2.S
+S[1] <= Somador_1bit:inst3.S
+S[0] <= Somador_1bit:inst9.S
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Subtrator_5bits:inst2|Somador_1bit:inst9
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Subtrator_5bits:inst2|Somador_1bit:inst3
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Subtrator_5bits:inst2|Somador_1bit:inst2
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Subtrator_5bits:inst2|Somador_1bit:inst1
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Subtrator_5bits:inst2|Somador_1bit:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|A-1:inst4
+Overflow <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[4] => Somador_1bit:inst.A
+A[3] => Somador_1bit:inst1.A
+A[2] => Somador_1bit:inst2.A
+A[1] => Somador_1bit:inst3.A
+A[0] => Somador_1bit:inst9.A
+S[4] <= Somador_1bit:inst.S
+S[3] <= Somador_1bit:inst1.S
+S[2] <= Somador_1bit:inst2.S
+S[1] <= Somador_1bit:inst3.S
+S[0] <= Somador_1bit:inst9.S
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|A-1:inst4|Somador_1bit:inst9
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|A-1:inst4|Somador_1bit:inst3
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|A-1:inst4|Somador_1bit:inst2
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|A-1:inst4|Somador_1bit:inst1
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|A-1:inst4|Somador_1bit:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Ax4:inst5
+Overflow <= Or.DB_MAX_OUTPUT_PORT_TYPE
+A[4] => Somador_5bit:inst.A[4]
+A[4] => Somador_5bit:inst.B[4]
+A[4] => Somador_5bit:inst2.B[4]
+A[4] => Somador_5bit:inst3.B[4]
+A[3] => Somador_5bit:inst.A[3]
+A[3] => Somador_5bit:inst.B[3]
+A[3] => Somador_5bit:inst2.B[3]
+A[3] => Somador_5bit:inst3.B[3]
+A[2] => Somador_5bit:inst.A[2]
+A[2] => Somador_5bit:inst.B[2]
+A[2] => Somador_5bit:inst2.B[2]
+A[2] => Somador_5bit:inst3.B[2]
+A[1] => Somador_5bit:inst.A[1]
+A[1] => Somador_5bit:inst.B[1]
+A[1] => Somador_5bit:inst2.B[1]
+A[1] => Somador_5bit:inst3.B[1]
+A[0] => Somador_5bit:inst.A[0]
+A[0] => Somador_5bit:inst.B[0]
+A[0] => Somador_5bit:inst2.B[0]
+A[0] => Somador_5bit:inst3.B[0]
+S[4] <= Somador_5bit:inst3.S[4]
+S[3] <= Somador_5bit:inst3.S[3]
+S[2] <= Somador_5bit:inst3.S[2]
+S[1] <= Somador_5bit:inst3.S[1]
+S[0] <= Somador_5bit:inst3.S[0]
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Ax4:inst5|Somador_5bit:inst2
+Overflow <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[4] => Somador_1bit:inst.A
+A[3] => Somador_1bit:inst1.A
+A[2] => Somador_1bit:inst2.A
+A[1] => Somador_1bit:inst3.A
+A[0] => Somador_1bit:inst9.A
+B[4] => Somador_1bit:inst.B
+B[3] => Somador_1bit:inst1.B
+B[2] => Somador_1bit:inst2.B
+B[1] => Somador_1bit:inst3.B
+B[0] => Somador_1bit:inst9.B
+S[4] <= Somador_1bit:inst.S
+S[3] <= Somador_1bit:inst1.S
+S[2] <= Somador_1bit:inst2.S
+S[1] <= Somador_1bit:inst3.S
+S[0] <= Somador_1bit:inst9.S
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Ax4:inst5|Somador_5bit:inst2|Somador_1bit:inst9
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Ax4:inst5|Somador_5bit:inst2|Somador_1bit:inst3
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Ax4:inst5|Somador_5bit:inst2|Somador_1bit:inst2
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Ax4:inst5|Somador_5bit:inst2|Somador_1bit:inst1
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Ax4:inst5|Somador_5bit:inst2|Somador_1bit:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Ax4:inst5|Somador_5bit:inst
+Overflow <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[4] => Somador_1bit:inst.A
+A[3] => Somador_1bit:inst1.A
+A[2] => Somador_1bit:inst2.A
+A[1] => Somador_1bit:inst3.A
+A[0] => Somador_1bit:inst9.A
+B[4] => Somador_1bit:inst.B
+B[3] => Somador_1bit:inst1.B
+B[2] => Somador_1bit:inst2.B
+B[1] => Somador_1bit:inst3.B
+B[0] => Somador_1bit:inst9.B
+S[4] <= Somador_1bit:inst.S
+S[3] <= Somador_1bit:inst1.S
+S[2] <= Somador_1bit:inst2.S
+S[1] <= Somador_1bit:inst3.S
+S[0] <= Somador_1bit:inst9.S
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Ax4:inst5|Somador_5bit:inst|Somador_1bit:inst9
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Ax4:inst5|Somador_5bit:inst|Somador_1bit:inst3
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Ax4:inst5|Somador_5bit:inst|Somador_1bit:inst2
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Ax4:inst5|Somador_5bit:inst|Somador_1bit:inst1
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Ax4:inst5|Somador_5bit:inst|Somador_1bit:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Ax4:inst5|Somador_5bit:inst3
+Overflow <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[4] => Somador_1bit:inst.A
+A[3] => Somador_1bit:inst1.A
+A[2] => Somador_1bit:inst2.A
+A[1] => Somador_1bit:inst3.A
+A[0] => Somador_1bit:inst9.A
+B[4] => Somador_1bit:inst.B
+B[3] => Somador_1bit:inst1.B
+B[2] => Somador_1bit:inst2.B
+B[1] => Somador_1bit:inst3.B
+B[0] => Somador_1bit:inst9.B
+S[4] <= Somador_1bit:inst.S
+S[3] <= Somador_1bit:inst1.S
+S[2] <= Somador_1bit:inst2.S
+S[1] <= Somador_1bit:inst3.S
+S[0] <= Somador_1bit:inst9.S
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Ax4:inst5|Somador_5bit:inst3|Somador_1bit:inst9
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Ax4:inst5|Somador_5bit:inst3|Somador_1bit:inst3
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Ax4:inst5|Somador_5bit:inst3|Somador_1bit:inst2
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Ax4:inst5|Somador_5bit:inst3|Somador_1bit:inst1
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Ax4:inst5|Somador_5bit:inst3|Somador_1bit:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN0
+A => inst4.IN1
+A => inst2.IN0
+A => inst1.IN0
+Cin => inst3.IN1
+Cin => inst.IN1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Comparador_5bit:inst6
+S <= Comparador_bit_sinal:inst4.S
+A[4] => Comparador_1bit:inst.A
+A[3] => Comparador_1bit:inst6.A
+A[2] => Comparador_1bit:inst7.A
+A[1] => Comparador_1bit:inst8.A
+A[0] => Comparador_bit_sinal:inst4.A
+B[4] => Comparador_1bit:inst.B
+B[3] => Comparador_1bit:inst6.B
+B[2] => Comparador_1bit:inst7.B
+B[1] => Comparador_1bit:inst8.B
+B[0] => Comparador_bit_sinal:inst4.B
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Comparador_5bit:inst6|Comparador_bit_sinal:inst4
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+B => inst1.IN1
+Cin => inst3.IN1
+Cin => inst1.IN0
+A => inst4.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Comparador_5bit:inst6|Comparador_1bit:inst8
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+Cin => inst3.IN1
+Cin => inst1.IN0
+A => inst2.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Comparador_5bit:inst6|Comparador_1bit:inst7
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+Cin => inst3.IN1
+Cin => inst1.IN0
+A => inst2.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Comparador_5bit:inst6|Comparador_1bit:inst6
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+Cin => inst3.IN1
+Cin => inst1.IN0
+A => inst2.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Comparador_5bit:inst6|Comparador_1bit:inst
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+Cin => inst3.IN1
+Cin => inst1.IN0
+A => inst2.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Comparador_5bit_Menor_Igual:inst7
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A[4] => Comparador_5bit:inst.A[4]
+A[3] => Comparador_5bit:inst.A[3]
+A[2] => Comparador_5bit:inst.A[2]
+A[1] => Comparador_5bit:inst.A[1]
+A[0] => Comparador_5bit:inst.A[0]
+B[4] => Comparador_5bit:inst.B[4]
+B[3] => Comparador_5bit:inst.B[3]
+B[2] => Comparador_5bit:inst.B[2]
+B[1] => Comparador_5bit:inst.B[1]
+B[0] => Comparador_5bit:inst.B[0]
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Comparador_5bit_Menor_Igual:inst7|Comparador_5bit:inst
+S <= Comparador_bit_sinal:inst4.S
+A[4] => Comparador_1bit:inst.A
+A[3] => Comparador_1bit:inst6.A
+A[2] => Comparador_1bit:inst7.A
+A[1] => Comparador_1bit:inst8.A
+A[0] => Comparador_bit_sinal:inst4.A
+B[4] => Comparador_1bit:inst.B
+B[3] => Comparador_1bit:inst6.B
+B[2] => Comparador_1bit:inst7.B
+B[1] => Comparador_1bit:inst8.B
+B[0] => Comparador_bit_sinal:inst4.B
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Comparador_5bit_Menor_Igual:inst7|Comparador_5bit:inst|Comparador_bit_sinal:inst4
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+B => inst1.IN1
+Cin => inst3.IN1
+Cin => inst1.IN0
+A => inst4.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Comparador_5bit_Menor_Igual:inst7|Comparador_5bit:inst|Comparador_1bit:inst8
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+Cin => inst3.IN1
+Cin => inst1.IN0
+A => inst2.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Comparador_5bit_Menor_Igual:inst7|Comparador_5bit:inst|Comparador_1bit:inst7
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+Cin => inst3.IN1
+Cin => inst1.IN0
+A => inst2.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Comparador_5bit_Menor_Igual:inst7|Comparador_5bit:inst|Comparador_1bit:inst6
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+Cin => inst3.IN1
+Cin => inst1.IN0
+A => inst2.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Comparador_5bit_Menor_Igual:inst7|Comparador_5bit:inst|Comparador_1bit:inst
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+Cin => inst3.IN1
+Cin => inst1.IN0
+A => inst2.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Maximo:inst8
+S[4] <= Multiplexador_2_1_5bits:inst2.S[4]
+S[3] <= Multiplexador_2_1_5bits:inst2.S[3]
+S[2] <= Multiplexador_2_1_5bits:inst2.S[2]
+S[1] <= Multiplexador_2_1_5bits:inst2.S[1]
+S[0] <= Multiplexador_2_1_5bits:inst2.S[0]
+A[4] => Comparador_5bit:inst.A[4]
+A[4] => Multiplexador_2_1_5bits:inst2.A[4]
+A[3] => Comparador_5bit:inst.A[3]
+A[3] => Multiplexador_2_1_5bits:inst2.A[3]
+A[2] => Comparador_5bit:inst.A[2]
+A[2] => Multiplexador_2_1_5bits:inst2.A[2]
+A[1] => Comparador_5bit:inst.A[1]
+A[1] => Multiplexador_2_1_5bits:inst2.A[1]
+A[0] => Comparador_5bit:inst.A[0]
+A[0] => Multiplexador_2_1_5bits:inst2.A[0]
+B[4] => Comparador_5bit:inst.B[4]
+B[4] => Multiplexador_2_1_5bits:inst2.B[4]
+B[3] => Comparador_5bit:inst.B[3]
+B[3] => Multiplexador_2_1_5bits:inst2.B[3]
+B[2] => Comparador_5bit:inst.B[2]
+B[2] => Multiplexador_2_1_5bits:inst2.B[2]
+B[1] => Comparador_5bit:inst.B[1]
+B[1] => Multiplexador_2_1_5bits:inst2.B[1]
+B[0] => Comparador_5bit:inst.B[0]
+B[0] => Multiplexador_2_1_5bits:inst2.B[0]
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Maximo:inst8|Multiplexador_2_1_5bits:inst2
+S[4] <= Multiplexador_2_1:inst4.Z
+S[3] <= Multiplexador_2_1:inst.Z
+S[2] <= Multiplexador_2_1:inst1.Z
+S[1] <= Multiplexador_2_1:inst2.Z
+S[0] <= Multiplexador_2_1:inst3.Z
+B[4] => Multiplexador_2_1:inst4.I0
+B[3] => Multiplexador_2_1:inst.I0
+B[2] => Multiplexador_2_1:inst1.I0
+B[1] => Multiplexador_2_1:inst2.I0
+B[0] => Multiplexador_2_1:inst3.I0
+A[4] => Multiplexador_2_1:inst4.I1
+A[3] => Multiplexador_2_1:inst.I1
+A[2] => Multiplexador_2_1:inst1.I1
+A[1] => Multiplexador_2_1:inst2.I1
+A[0] => Multiplexador_2_1:inst3.I1
+SEL => Multiplexador_2_1:inst4.S
+SEL => Multiplexador_2_1:inst.S
+SEL => Multiplexador_2_1:inst1.S
+SEL => Multiplexador_2_1:inst2.S
+SEL => Multiplexador_2_1:inst3.S
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Maximo:inst8|Multiplexador_2_1_5bits:inst2|Multiplexador_2_1:inst4
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Maximo:inst8|Multiplexador_2_1_5bits:inst2|Multiplexador_2_1:inst
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Maximo:inst8|Multiplexador_2_1_5bits:inst2|Multiplexador_2_1:inst1
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Maximo:inst8|Multiplexador_2_1_5bits:inst2|Multiplexador_2_1:inst2
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Maximo:inst8|Multiplexador_2_1_5bits:inst2|Multiplexador_2_1:inst3
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Maximo:inst8|Comparador_5bit:inst
+S <= Comparador_bit_sinal:inst4.S
+A[4] => Comparador_1bit:inst.A
+A[3] => Comparador_1bit:inst6.A
+A[2] => Comparador_1bit:inst7.A
+A[1] => Comparador_1bit:inst8.A
+A[0] => Comparador_bit_sinal:inst4.A
+B[4] => Comparador_1bit:inst.B
+B[3] => Comparador_1bit:inst6.B
+B[2] => Comparador_1bit:inst7.B
+B[1] => Comparador_1bit:inst8.B
+B[0] => Comparador_bit_sinal:inst4.B
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Maximo:inst8|Comparador_5bit:inst|Comparador_bit_sinal:inst4
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+B => inst1.IN1
+Cin => inst3.IN1
+Cin => inst1.IN0
+A => inst4.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Maximo:inst8|Comparador_5bit:inst|Comparador_1bit:inst8
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+Cin => inst3.IN1
+Cin => inst1.IN0
+A => inst2.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Maximo:inst8|Comparador_5bit:inst|Comparador_1bit:inst7
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+Cin => inst3.IN1
+Cin => inst1.IN0
+A => inst2.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Maximo:inst8|Comparador_5bit:inst|Comparador_1bit:inst6
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+Cin => inst3.IN1
+Cin => inst1.IN0
+A => inst2.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Maximo:inst8|Comparador_5bit:inst|Comparador_1bit:inst
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+Cin => inst3.IN1
+Cin => inst1.IN0
+A => inst2.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Minimo:inst9
+S[4] <= Multiplexador_2_1_5bits:inst2.S[4]
+S[3] <= Multiplexador_2_1_5bits:inst2.S[3]
+S[2] <= Multiplexador_2_1_5bits:inst2.S[2]
+S[1] <= Multiplexador_2_1_5bits:inst2.S[1]
+S[0] <= Multiplexador_2_1_5bits:inst2.S[0]
+A[4] => Comparador_5bit:inst.A[4]
+A[4] => Multiplexador_2_1_5bits:inst2.A[4]
+A[3] => Comparador_5bit:inst.A[3]
+A[3] => Multiplexador_2_1_5bits:inst2.A[3]
+A[2] => Comparador_5bit:inst.A[2]
+A[2] => Multiplexador_2_1_5bits:inst2.A[2]
+A[1] => Comparador_5bit:inst.A[1]
+A[1] => Multiplexador_2_1_5bits:inst2.A[1]
+A[0] => Comparador_5bit:inst.A[0]
+A[0] => Multiplexador_2_1_5bits:inst2.A[0]
+B[4] => Comparador_5bit:inst.B[4]
+B[4] => Multiplexador_2_1_5bits:inst2.B[4]
+B[3] => Comparador_5bit:inst.B[3]
+B[3] => Multiplexador_2_1_5bits:inst2.B[3]
+B[2] => Comparador_5bit:inst.B[2]
+B[2] => Multiplexador_2_1_5bits:inst2.B[2]
+B[1] => Comparador_5bit:inst.B[1]
+B[1] => Multiplexador_2_1_5bits:inst2.B[1]
+B[0] => Comparador_5bit:inst.B[0]
+B[0] => Multiplexador_2_1_5bits:inst2.B[0]
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Minimo:inst9|Multiplexador_2_1_5bits:inst2
+S[4] <= Multiplexador_2_1:inst4.Z
+S[3] <= Multiplexador_2_1:inst.Z
+S[2] <= Multiplexador_2_1:inst1.Z
+S[1] <= Multiplexador_2_1:inst2.Z
+S[0] <= Multiplexador_2_1:inst3.Z
+B[4] => Multiplexador_2_1:inst4.I0
+B[3] => Multiplexador_2_1:inst.I0
+B[2] => Multiplexador_2_1:inst1.I0
+B[1] => Multiplexador_2_1:inst2.I0
+B[0] => Multiplexador_2_1:inst3.I0
+A[4] => Multiplexador_2_1:inst4.I1
+A[3] => Multiplexador_2_1:inst.I1
+A[2] => Multiplexador_2_1:inst1.I1
+A[1] => Multiplexador_2_1:inst2.I1
+A[0] => Multiplexador_2_1:inst3.I1
+SEL => Multiplexador_2_1:inst4.S
+SEL => Multiplexador_2_1:inst.S
+SEL => Multiplexador_2_1:inst1.S
+SEL => Multiplexador_2_1:inst2.S
+SEL => Multiplexador_2_1:inst3.S
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Minimo:inst9|Multiplexador_2_1_5bits:inst2|Multiplexador_2_1:inst4
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Minimo:inst9|Multiplexador_2_1_5bits:inst2|Multiplexador_2_1:inst
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Minimo:inst9|Multiplexador_2_1_5bits:inst2|Multiplexador_2_1:inst1
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Minimo:inst9|Multiplexador_2_1_5bits:inst2|Multiplexador_2_1:inst2
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Minimo:inst9|Multiplexador_2_1_5bits:inst2|Multiplexador_2_1:inst3
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst2.IN0
+S => inst2.IN1
+S => inst.IN0
+I0 => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Minimo:inst9|Comparador_5bit:inst
+S <= Comparador_bit_sinal:inst4.S
+A[4] => Comparador_1bit:inst.A
+A[3] => Comparador_1bit:inst6.A
+A[2] => Comparador_1bit:inst7.A
+A[1] => Comparador_1bit:inst8.A
+A[0] => Comparador_bit_sinal:inst4.A
+B[4] => Comparador_1bit:inst.B
+B[3] => Comparador_1bit:inst6.B
+B[2] => Comparador_1bit:inst7.B
+B[1] => Comparador_1bit:inst8.B
+B[0] => Comparador_bit_sinal:inst4.B
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Minimo:inst9|Comparador_5bit:inst|Comparador_bit_sinal:inst4
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+B => inst1.IN1
+Cin => inst3.IN1
+Cin => inst1.IN0
+A => inst4.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Minimo:inst9|Comparador_5bit:inst|Comparador_1bit:inst8
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+Cin => inst3.IN1
+Cin => inst1.IN0
+A => inst2.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Minimo:inst9|Comparador_5bit:inst|Comparador_1bit:inst7
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+Cin => inst3.IN1
+Cin => inst1.IN0
+A => inst2.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Minimo:inst9|Comparador_5bit:inst|Comparador_1bit:inst6
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+Cin => inst3.IN1
+Cin => inst1.IN0
+A => inst2.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Menu_Parte1:inst2|Minimo:inst9|Comparador_5bit:inst|Comparador_1bit:inst
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+Cin => inst3.IN1
+Cin => inst1.IN0
+A => inst2.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Decodificador:inst
+S1 <= S1:inst.S1
+A => S1:inst.A
+A => S8:inst3.A
+A => S9:inst6.A
+A => S10:inst8.A
+A => S11:inst9.A
+A => S12:inst10.A
+A => S13:inst11.A
+A => S14:inst4.A
+B => S1:inst.B
+B => S8:inst3.B
+B => S9:inst6.B
+B => S10:inst8.B
+B => S11:inst9.B
+B => S12:inst10.B
+B => S13:inst11.B
+B => S14:inst4.B
+C => S1:inst.C
+C => S8:inst3.C
+C => S9:inst6.C
+C => S10:inst8.C
+C => S11:inst9.C
+C => S12:inst10.C
+C => S13:inst11.C
+C => S14:inst4.C
+D => S1:inst.D
+D => S8:inst3.D
+D => S9:inst6.D
+D => S10:inst8.D
+D => S11:inst9.D
+D => S12:inst10.D
+D => S13:inst11.D
+D => S14:inst4.D
+E => S1:inst.E
+E => S8:inst3.E
+E => S9:inst6.E
+E => S10:inst8.E
+E => S11:inst9.E
+E => S12:inst10.E
+E => S13:inst11.E
+E => S14:inst4.E
+S2 <= <VCC>
+S3 <= <VCC>
+S4 <= S1:inst.S1
+S5 <= S1:inst.S1
+S6 <= S1:inst.S1
+S7 <= <GND>
+S8 <= S8:inst3.S8
+S9 <= S9:inst6.S9
+S10 <= S10:inst8.S10
+S11 <= S11:inst9.S11
+S12 <= S12:inst10.S12
+S13 <= S13:inst11.S13
+S14 <= S14:inst4.S14
+
+
+|ULA_Adelino_Mateus_Victor|Decodificador:inst|S1:inst
+S1 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst13.IN0
+B => inst3.IN1
+B => inst12.IN0
+C => inst4.IN0
+C => inst11.IN0
+D => inst2.IN0
+D => inst10.IN0
+E => inst2.IN1
+
+
+|ULA_Adelino_Mateus_Victor|Decodificador:inst|S8:inst3
+S8 <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+A => inst20.IN0
+A => inst19.IN0
+A => inst12.IN0
+A => inst21.IN0
+A => inst35.IN0
+C => inst18.IN0
+C => inst32.IN0
+C => inst4.IN0
+C => inst5.IN0
+D => inst8.IN0
+D => inst31.IN0
+D => inst3.IN0
+D => inst4.IN1
+E => inst34.IN0
+E => inst6.IN1
+E => inst3.IN1
+E => inst5.IN1
+B => inst16.IN0
+B => inst9.IN0
+B => inst33.IN0
+B => inst.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Decodificador:inst|S9:inst6
+S9 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+A => inst10.IN0
+A => inst.IN0
+C => inst10.IN1
+C => inst2.IN0
+B => inst9.IN0
+B => inst1.IN0
+B => inst7.IN0
+D => inst3.IN0
+D => inst8.IN0
+D => inst15.IN1
+E => inst8.IN1
+E => inst4.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Decodificador:inst|S10:inst8
+S10 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+E => inst13.IN0
+A => inst8.IN0
+A => inst7.IN0
+A => inst16.IN0
+B => inst4.IN0
+B => inst9.IN0
+B => inst19.IN0
+D => inst17.IN0
+D => inst3.IN1
+D => inst1.IN1
+C => inst18.IN0
+C => inst1.IN0
+C => inst.IN1
+
+
+|ULA_Adelino_Mateus_Victor|Decodificador:inst|S11:inst9
+S11 <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+A => inst38.IN0
+A => inst36.IN0
+A => inst34.IN0
+A => inst32.IN0
+A => inst30.IN0
+A => inst48.IN0
+C => inst25.IN0
+C => inst50.IN0
+C => inst24.IN0
+C => inst20.IN0
+C => inst3.IN0
+C => inst13.IN0
+E => inst52.IN0
+E => inst11.IN1
+E => inst8.IN1
+E => inst5.IN1
+E => inst3.IN1
+E => inst.IN1
+B => inst37.IN0
+B => inst23.IN0
+B => inst49.IN0
+B => inst16.IN0
+B => inst2.IN0
+D => inst51.IN0
+D => inst10.IN1
+D => inst8.IN0
+D => inst7.IN0
+D => inst5.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Decodificador:inst|S12:inst10
+S12 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+A => inst14.IN0
+A => inst5.IN0
+A => inst21.IN0
+B => inst13.IN0
+B => inst25.IN0
+B => inst2.IN0
+E => inst23.IN0
+D => inst11.IN1
+D => inst22.IN0
+D => inst7.IN0
+C => inst24.IN0
+C => inst9.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Decodificador:inst|S13:inst11
+S13 <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+A => inst26.IN0
+A => inst24.IN0
+A => inst12.IN0
+A => inst20.IN0
+A => inst23.IN0
+A => inst44.IN0
+B => inst22.IN0
+B => inst21.IN0
+B => inst43.IN0
+B => inst18.IN0
+B => inst10.IN0
+B => inst15.IN0
+D => inst41.IN0
+D => inst14.IN1
+D => inst8.IN1
+D => inst5.IN1
+E => inst40.IN0
+C => inst42.IN0
+C => inst8.IN0
+C => inst5.IN0
+C => inst2.IN0
+C => inst1.IN0
+
+
+|ULA_Adelino_Mateus_Victor|Decodificador:inst|S14:inst4
+S14 <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+B => inst26.IN0
+B => inst25.IN0
+B => inst1.IN0
+B => inst8.IN0
+B => inst6.IN0
+C => inst15.IN0
+C => inst14.IN0
+C => inst2.IN0
+C => inst8.IN1
+C => inst7.IN0
+C => inst5.IN0
+E => inst4.IN0
+D => inst3.IN0
+D => inst13.IN1
+D => inst11.IN0
+D => inst10.IN1
+A => inst24.IN0
+A => inst23.IN0
+A => inst37.IN0
+A => inst20.IN0
+A => inst.IN0
+
+

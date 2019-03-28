@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Thu Jun 09 19:01:30 2016
+Quartus II 32-bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Revision Name : ULA_Adelino_Mateus_Victor
+Top-level Entity Name : ULA_Adelino_Mateus_Victor
+Family : Cyclone IV GX
+Total logic elements : 74
+    Total combinational functions : 74
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 30
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
